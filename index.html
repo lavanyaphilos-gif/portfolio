@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavanya Philos - BCA cybersecurity Portfolio | Frontend & Backend Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h2><i class="fas fa-user"></i> Lavanya philos</h2>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#backend">Backend</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Frontend & Backend Developer</h1>
+            <p>BCA cybersecurity 1st Year | Kristu Jayanti College<br>Java, Python, HTML/CSS, Data Analysis</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#backend" class="btn btn-secondary">Backend Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fab fa-java"></i>
+                <h3>Java (Basic)</h3>
+                <p>OOP concepts, basic applications</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <h3>HTML/CSS</h3>
+                <p>Responsive design, modern layouts</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-python"></i>
+                <h3>Python</h3>
+                <p>Data analysis, ML models</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-copyright"></i>
+                <h3>C (Basic)</h3>
+                <p>Programming fundamentals</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Featured Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+                <h3>Traffic Accidents Data Analysis</h3>
+                <p>Analyzed traffic accident datasets using Python (Pandas, Matplotlib) to identify patterns, peak
+                    hours, and prevention strategies.</p>
+                <div class="project-tech">
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>Matplotlib</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-icon"><i class="fas fa-coins"></i></div>
+                <h3>Salary Prediction Model</h3>
+                <p>Built ML model using Linear Regression to predict salaries based on experience, education, and
+                    skills. Achieved 95% accuracy.</p>
+                <div class="project-tech">
+                    <span>Python</span>
+                    <span>Scikit-learn</span>
+                    <span>Linear Regression</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-icon"><i class="fas fa-laptop-code"></i></div>
+                <h3>Portfolio Website</h3>
+                <p>This responsive portfolio with working backend form system. HTML5, CSS3, JavaScript, LocalStorage
+                    database.</p>
+                <div class="project-tech">
+                    <span>HTML/CSS/JS</span>
+                    <span>LocalStorage</span>
+                    <span>Responsive</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="backend" class="backend-demo">
+        <h2>Backend Demo - Contact Database</h2>
+        <p class="backend-info">Real-time database storing visitor details (Name, Age, Email). Data persists across
+            sessions!</p>
+
+        <div class="backend-stats">
+            <div class="stat-card">
+                <h3 id="totalContacts">0</h3>
+                <p>Total Contacts</p>
+            </div>
+            <div class="stat-card">
+                <h3 id="todayContacts">0</h3>
+                <p>Today</p>
+            </div>
+        </div>
+
+        <div class="backend-form">
+            <h3>Add Contact</h3>
+            <form id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Full Name" required>
+                    <input type="number" id="age" placeholder="Age" min="13" max="100" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email Address" required>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-save"></i> Save to Database
+                </button>
+            </form>
+            <div id="formStatus"></div>
+        </div>
+
+        <div class="contacts-list">
+            <h4>Recent Contacts (<span id="liveCount">0</span>)</h4>
+            <div id="contactsDisplay"></div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Information</h2>
+        <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> 25bcyb32@kristujayanti.com</p>
+            <p><i class="fas fa-phone"></i> +91-8073216454</p>
+            <p><i class="fas fa-map-marker-alt"></i> Kristu Jayanti College, Bengaluru</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Lavanya Philos | BCA 1st Year | Frontend & Backend Developer | Made with ❤️</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
